@@ -1,0 +1,131 @@
+nav{
+  display: flex;
+   text-align: center;
+  justify-content: space-between;
+  padding:1.5rem 5rem;
+  background-color: #023246;
+  height: 5rem;
+  width: 100vw;
+  align-items: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0,0.2);
+  z-index: 99;
+  
+
+}
+.logo{
+  display: flex;
+  align-items: center;
+
+}
+.logo h1{
+  color: whitesmoke;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.logo span{
+  color:#78bcca;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-top: -35px;
+  border-radius: 50%;
+}
+
+
+ ul  a{
+  color: #78bcca;
+  font-size: 1.3rem;
+ text-transform: capitalize;
+ font-weight: 500;
+ transition: 0.5s;
+ display: inline;
+ margin: 0 1.9rem;
+ padding-bottom: 4px;
+ cursor: pointer;
+
+ }
+ nav button{
+  display: none;
+ }
+
+.active{
+ border-bottom: 2px solid #78bcca;
+}
+
+@media screen and (min-width:768px) {
+  .links-container{
+    height: auto !important;
+  }
+}
+@media screen and (max-width:768px){
+  nav button{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+   }
+
+   nav{
+    padding:1.5rem 2rem;
+   }
+
+ .links-container{
+  width: 100vw;
+  position: absolute;
+  top: 100%;
+  left: 0;
+   height: 0;
+   overflow: hidden;
+  transition: 0.5s;
+  background-color: whitesmoke;
+ 
+ }
+ .links a{
+  display: block;
+  padding-bottom: 1.5rem;
+  text-align: left;
+ }
+ .active{
+  border-bottom: 0;
+ }
+
+.links{
+padding-top: 1.5rem;
+ }
+}
+
+@media screen and (max-width:480px) {
+  .logo h1{
+    font-size: 1.5rem;
+  }
+  nav button{
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

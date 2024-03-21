@@ -1,0 +1,195 @@
+#about{
+  width: 80%;
+   margin:  0 auto;
+   text-align: center;
+   margin-top: 8rem;
+   padding: 0 2rem;
+
+
+ }
+
+.about-me{
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap:15% ;
+}
+
+
+.left{
+  position: relative;
+}
+.left .header_image-bg{
+  width: 16rem;
+  height: 21.6rem;
+  background-color: #486d76;
+  position: absolute;
+}
+.left .header_image-lg{
+  width: 2rem;
+   position: relative;
+  top: 0.8rem;
+  left: 0.8rem;
+  text-align: center;
+}
+.left .header_image-lg img{
+  width: 24rem;
+  height: 21rem;
+   border-radius: 6px;
+   object-fit: cover;
+  
+}
+.right .cards{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.right .cards .card{
+  padding: 1.5rem 3rem ;
+   background-color:#134080;
+   border-radius: 10px;
+   transition: 0.5s;
+} 
+.right .cards .card:hover{
+  transform: scale(1.1);
+}
+.card h3{
+  color:#78bcca;
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+.card h4{
+  color: whitesmoke;
+  text-transform: capitalize;
+  padding-bottom:0.4rem ;
+}
+.card p{
+  color: #b4b2b2;
+}
+.right p{
+  text-align: left;
+  line-height: 1.3rem;
+  color: #d7d2d2;
+}
+.right a{
+  text-align: left;
+  margin-top: 2rem;
+  padding: 8px 12px;
+  background-color: #52a2b2;
+  color: #023246;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.5s;
+}
+.right a:hover{
+  background-color: whitesmoke;
+}
+
+
+
+@media screen and (max-width:768px) {
+  #about{
+    width: 90%;
+    margin-top: 8rem;
+
+  }
+ 
+
+  .left .header_image-bg{
+   display: none;
+  }
+
+  .left .header_image-lg img{
+    width: 100%;
+    height: 16rem;
+     border-radius: 6px;
+    
+  }
+
+  .left .header_image-lg {
+    width: 16rem;
+    height: 16rem;
+     border-radius: 6px;
+    left: 0;
+    top: 0;
+    margin-left: -12px;
+  }
+  .right .cards{
+   gap: 1.3rem;
+   
+   
+   }
+
+   .right .cards .card{
+    padding:0.8rem 2.5rem ;
+     background-color:#134080;
+     border-radius: 10px;
+     transition: 0.5s;
+    
+  }
+  .right a{
+    margin-top: 1rem;
+  }
+
+ .left{
+    width: 100%;
+  }
+  .left .header_image-lg img{
+    width: 100%;
+    height: 16rem;
+     border-radius: 6px;
+     object-fit: cover;
+    
+  }
+  .right .cards{
+    gap: 0.7rem;
+  
+    
+    
+    }
+
+    .right p{
+    width: 100%;
+      text-align: left;
+      line-height: 1.5rem;
+    }
+
+    .right .cards .card:hover{
+      transform: scale(1);
+    }
+  }
+  @media screen and (max-width:480px){
+    #about{
+      width: 100%;
+     }
+    .about-me{
+      grid-template-columns: 100%;
+      gap: 5%;
+      place-items: center;
+      padding: 0;
+     
+      
+     }
+   
+     .left .header_image-lg{
+      width: 100%;
+      display: grid;
+      place-items: center;
+      margin-left: 0.2rem;
+     }
+
+     .right .cards{
+      width: 100%;
+      padding:0.2rem 0 ;
+     }
+    
+   
+  }
+
+
+
